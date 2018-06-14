@@ -1,0 +1,32 @@
+{
+  "name": "archdevjsx",
+  "version": "0.0.1-alpha.1",
+  "description": "Architecode React JSX Component Based Project",
+  "private": true,
+  "main": "./index.js",
+  "scripts": {
+    "build": "npm run cleanup && npm run build-ts && npm run build-es",
+    "build-es": "babel ./src --out-dir . --extensions \".js,.jsx\" --ignore *.spec.js",
+    "cleanup": "node _scripts/cleanup",
+    "aftertests": "node _scripts/aftertests"
+  },
+  "author": "Architecode Corporation",
+  "license": "MIT",
+  "repository": "git+https://github.com/architecode/archdevtsx",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
+    "@babel/plugin-transform-object-assign": "^7.0.0-beta.51",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "react": "^16.4.1",
+    "shelljs": "^0.8.2"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
